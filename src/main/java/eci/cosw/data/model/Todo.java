@@ -15,7 +15,7 @@ public class Todo {
 
     private int priority;
 
-    private String dueDate;
+    private Date dueDate;
 
     private String responsible;
 
@@ -24,7 +24,7 @@ public class Todo {
     public Todo() {
     }
 
-    public Todo(String description, int priority, String dueDate, String responsible, String status) {
+    public Todo(String description, int priority, Date dueDate, String responsible, String status) {
         this.description = description;
         this.priority = priority;
         this.dueDate = dueDate;
@@ -55,11 +55,11 @@ public class Todo {
         this.priority = priority;
     }
 
-    public String getDueDate() {
+    public Date getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(String dueDate) {
+    public void setDueDate(Date dueDate) {
         this.dueDate = dueDate;
     }
 
